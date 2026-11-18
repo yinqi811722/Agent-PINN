@@ -1,0 +1,52 @@
+{
+  "csv_k50": "data/quarterly_counts_and_overlap_K50_2018Q1_2025Q4.csv",
+  "csv_k75": "data/quarterly_counts_and_overlap_K75_2018Q1_2025Q4.csv",
+  "csv_k100": "data/quarterly_counts_and_overlap_K100_2018Q1_2025Q4.csv",
+  "outdir": "outputs/smoke",
+  "pairs": [
+    "cnn_transformer"
+  ],
+  "horizons": [
+    4
+  ],
+  "train_mode": "rolling_end",
+  "minmax_low": 0.05,
+  "minmax_high": 0.95,
+  "overlap_normalization": "auto",
+  "future_o_mode": "last",
+  "seeds": [
+    20260221
+  ],
+  "seq_len": 8,
+  "ttest_metric": "macro_nmae_percent",
+  "pinn_hidden_width": 32,
+  "pinn_hidden_layers": 2,
+  "collocation_points": 16,
+  "pinn_warmup_steps": 3,
+  "pinn_full_steps": 3,
+  "pinn_lr": 0.001,
+  "pinn_lr_decay_steps": 2000,
+  "pinn_lr_decay_factor": 0.7,
+  "curve_weight": 1.0,
+  "ode_weight": 1.0,
+  "boundary_weight": 1.0,
+  "rate_l2_weight": 0.0,
+  "nn_hidden_dim": 64,
+  "nn_epochs": 2,
+  "nn_lr": 0.001,
+  "cnn_kernel_size": 3,
+  "nhead": 4,
+  "layers": 2,
+  "dropout": 0.1,
+  "nbeats_hidden_dim": 64,
+  "nbeats_blocks": 3,
+  "nbeats_layers": 4,
+  "nbeats_epochs": 2,
+  "nbeats_lr": 0.001,
+  "grad_clip": 5.0,
+  "clip_norm": false,
+  "best_m1_metric": "macro_nmae_percent_mean",
+  "plot_history_quarters": 4,
+  "figure_dpi": 90,
+  "skip_paper_figures": true
+}
