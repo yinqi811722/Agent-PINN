@@ -1,4 +1,7 @@
-data/
+data/*
+!data/quarterly_counts_and_overlap_K50_2018Q1_2025Q4.csv
+!data/quarterly_counts_and_overlap_K75_2018Q1_2025Q4.csv
+!data/quarterly_counts_and_overlap_K100_2018Q1_2025Q4.csv
 outputs/
 __pycache__/
 *.pyc
